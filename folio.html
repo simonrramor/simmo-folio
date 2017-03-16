@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simmo-folio</title>
+      <link rel="stylesheet" href="css/reset.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <script src="css/assets/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header"> 
+    <div class="mobile-menue">
+      <div class="burger-btn">
+          <span></span>
+          <span></span>
+          <span></span>  
+      </div>
+
+    </div>
+    <div class="responsive-menue">
+      <ul class="navigation">
+        <li>
+          <a href='#'> Home </a>
+        </li>
+        <li>
+          <a href='#'> About </a>
+        </li>
+        <li>
+          <a href='#'> Products </a>
+        </li>
+        <li>
+          <a href='#'> Contact </a>
+        </li> 
+     </ul>
+    </div>
+   </div>
+
+   <div class="content">
+     <div class="project" id="image-1"></div>
+     <div class="project" id="image-2"></div>
+     <div class="project" id="image-3">3</div>
+     <div class="project" id="image-4">4</div>
+     <div class="project" id="image-5">5</div>
+     <div class="project" id="image-6">6</div>
+   </div>
+
+  <script>
+   $(".burger-btn").click(function() {
+         $ ('.responsive-menue').toggleClass('expand');
+        });
+  </script>
+}
+
+</body>
+</html>

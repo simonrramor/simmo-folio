@@ -1,0 +1,135 @@
+.header {
+background-color: deepskyblue;;
+
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.mobile-menue {
+  display: none;
+}
+
+.burger-btn{
+position: absolute;
+right: 20px;
+top: 12px;
+cursor: pointer;
+height: 20px;
+
+}
+
+.burger-btn span{
+  display: block;
+  width: 19px;
+  height: 3px;
+  background: rgb(244,244,244);
+  z-index: 99;
+  margin: 4px 0;
+}
+
+.expand {
+  display: block !important;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+a:hover {
+  background: skyblue;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.project{
+  background-color: orange;
+  height: 400px;
+  width: 47%;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#image-1 {
+  background-image: url('assets/doggy1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+}
+
+#image-2 {
+  background-image: url('assets/doggy2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+}
+
+
+
+@media (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 760px) {
+
+.content{
+      flex-flow: column wrap;
+    }
+
+    .project{
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+  .mobile-menue{
+    display: inline-block;
+    padding: 22px;
+  }
+
+  .responsive-menue {
+    display: none;
+  }
+
+  .navigation {
+      flex-flow: column wrap;
+    }
+
+    a {
+      text-align: center;
+    }
+
+      li {
+      text-align: center;
+      padding: 7px;
+    }
+
+  }
