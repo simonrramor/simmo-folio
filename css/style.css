@@ -1,104 +1,413 @@
-.header {
-background-color: deepskyblue;;
+h1 {
+  font-size: 50px;
+  font-family: 'Roboto Mono', monospace;
+}
 
+h2 {
+  font-size: 30px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+} 
+
+a:visited {
+  color: black;
+}
+
+.color {
+  color: lightgrey;
+}
+
+/*nav stuff*/
+
+
+.hand{
+  font-size: 30px;
+  padding-left: 5%;
+  padding-top: 20px;
+  display: flex;
+  float: left;
+  letter-spacing: 2px;
 }
 
 .navigation {
     display: flex;
+    padding-right: 4%;
+    padding-top: 10px;
     list-style: none;
     justify-content: flex-end;
-    font-weight: 500;
     letter-spacing: 2px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 900;
+} 
+
+.nav-link:hover {
+    color: pink;
 }
 
-.mobile-menue {
-  display: none;
-}
 
-.burger-btn{
-position: absolute;
-right: 20px;
-top: 12px;
-cursor: pointer;
-height: 20px;
-
-}
-
-.burger-btn span{
-  display: block;
-  width: 19px;
-  height: 3px;
-  background: rgb(244,244,244);
-  z-index: 99;
-  margin: 4px 0;
-}
-
-.expand {
-  display: block !important;
-}
-
-a {
-    color:white;
+.nav-link {
+    color:black;
     text-decoration: none;
     padding: 1em;
     display: block;
 }
 
-a:hover {
-  background: skyblue;
+
+/*intro headder and about me stuff */
+   .intro {
+  height: 400px;
+  margin-top: 50px;
+  display: inline-block;
+  margin-bottom: 60px;
 }
 
-.content{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
+.title{
+  font-size: 25px;
+  font-family: 'Roboto Mono', monospace;
+  max-width: 1000px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-left: 8%;
+  padding-bottom: 100px;
+  line-height: 1.7;
+  margin: 0 auto;
 }
+
+
+/*random*/
+
+
+
+/* homepage project stuff*/
 
 .project{
-  background-color: orange;
-  height: 400px;
-  width: 47%;
-  margin: 10px;
-  text-align: center;
+  height: 700px;
+  width: 90%;
+  text-align: left;
   font-size: 30px;
   color: white;
-  margin-top: 30px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin-top: 10px;
+  font-family: 'Roboto Mono', monospace;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
+.project-double-block{
+  height: 700px;
+  width: 48%;
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  margin-top: 10px;
+  font-family: 'Roboto Mono', monospace;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+
+.double-block{
+  height: 700px;
+  width: 91%;
+  margin-top: 10px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+
+}
+
+/*Mouce hover - Overlay and text*/
+
+.wrapper{ 
+  max-width: 100%;
+  padding: 30px;
+  position: relative;
+  height: 700px;
+  opacity: 0;
+}
+
+.wrapper:hover {
+  opacity: 1;
+}
+
+.project_description{
+  color: white;
+  margin-bottom: 70px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  max-width: 1000px;
+  width: 50%;
+  opacity: 1;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50px;  
+}
+
+.overlay{
+  top:0;
+  left: 0;
+  height: 700px;
+  width: 100%;
+  opacity: 0.8;
+  transition: .5s ease;
+  background-color: black;
+  padding-left: 60px;
+  padding-top: 100px;
+  position: absolute;
+  margin: 0 auto;
+}
+
+
+
+
+/* project overview on project page*/
+
+.project-title{
+  font-size: 25px;
+  font-family: 'Roboto Mono', monospace;
+  padding-bottom: 10px;
+  line-height: 1.7;
+
+}
+
+.project-overview {
+  padding-left: 5%;
+  margin-bottom: 70px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  width: 90%;
+  display: inline-block;
+}
+
+.project-description{
+  margin-left: 10%;
+  margin-bottom: 70px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  width: 40%; 
+  display: inline-block;
+  line-height: 1.7;
+  position: absolute;
+
+}
+
+.project-comment{
+  margin-left: 5%;
+  margin-bottom: 70px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  width: 50%; 
+  display: inline-block;
+  line-height: 1.7;
+
+}
+
+ul.project-stats {
+  line-height: 1.7;
+  padding: 0;
+  width: 40%;
+  display: inline-block;
+
+}
+
+
+
+.title a{
+  color: none;
+  text-decoration: underline;
+    text-decoration-style: wavy;
+    -moz-text-decoration-color: pink; /* Code for Firefox */
+    text-decoration-color: pink;
+}
+
+.title a:visited { 
+    color: black;}
+
+.title a:hover { 
+    color: pink;}
+
+
+/*Main page images - thumbnails*/
+#image-5 {
+  background-image: url(../Assets/homepage/time_tracker.png);}
 #image-1 {
-  background-image: url('assets/doggy1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 100%;
-}
-
+  background-image: url(../Assets/homepage/Splash_Main_headder.png);
+  background-color: #F4F4F4;}
 #image-2 {
-  background-image: url('assets/doggy2.png');
+  background-image: url(../Assets/homepage/welcome.jpg);
+  background-color: #F7FBFF;}
+#image-3 {
+    background-image: url(../Assets/media-centre/top-block.png);
+    background-color: #F4F4F4;}
+#image-4 {
+  background-image: url(../Assets/homepage/zendesk.png);}
+
+/* Chariti page images*/
+
+#image-1-1 {
+  background-image: url(../Assets/chariti-app/header-multi-screen.png);
+  background-color: #F7FBFF;
+  margin-top: 40px;}
+
+#image-1-2 {
+  background-image: url(../Assets/chariti-app/sign-up.png);
+  background-color: #F7FBFF;}
+#image-1-3 {
+  background-image: url(../Assets/chariti-app/location-pulse.gif);
+  background-color: #F7FBFF;}
+#image-1-4 {
+  background-image: url(../Assets/chariti-app/multi-screen-long.png);
+  background-color: #F7FBFF;
+  height: 1500px;}
+#image-1-5 {
+  background-image: url(../Assets/chariti-app/date-selector.png);
+  background-color: #F7FBFF;}
+#image-1-6 {
+  background-image: url(../Assets/chariti-app/comments.png);
+  background-color: #F7FBFF;}
+#image-1-7 {
+  background-image: url(../Assets/chariti-app/star-rating.png);
+  background-color: #F7FBFF;}
+#image-1-8 {
+  background-image: url(../Assets/chariti-app/awards.png);
+   background-color: #F7FBFF;
+    margin-right: 3%;}
+#image-1-9 {
+  background-image: url(../Assets/chariti-app/awards-overlay.png);
+   background-color: #F7FBFF;}
+
+
+  /*splash page images*/
+#image-2-1 {
+  background-image: url(../Assets/splash-page/header-main.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 100%;
+  margin-top: 40px;}
+#image-2-2 {
+  background-image: url(../Assets/splash-page/sign-in.png);
+  background-color: #F4F4F4;}
+#image-2-3 {
+  background-image: url(../Assets/splash-page/priority-notification.png);
+  background-color: #F4F4F4;}
+#image-2-4 {
+  background-image: url(../Assets/splash-page/newsfeed.png);
+  background-color: #F4F4F4;
+}
+#image-2-5 {
+  background-image: url(../Assets/splash-page/privacy-screen.gif);
+  background-color: #F4F4F4;
+}
+#image-2-6 {
+  background-image: url(../Assets/splash-page/mobile-design-1.png);
+  background-color: #F4F4F4;
+  margin-right: 3%;
+}
+#image-2-7 {
+  background-image: url(../Assets/splash-page/mobile-design-2.png);
+  background-color: #F4F4F4;
+}
+
+  /*Media centre page images*/
+#image-3-1 {
+  background-image: url(../Assets/media-centre/top-block.png);
+  margin-top: 40px;}
+#image-3-2 {
+  background-image: url(../Assets/media-centre/hero-story-2.png);}
+#image-3-3 {
+  background-image: url(../Assets/media-centre/filter.gif);
+  background-color: #F4F4F4;}
+#image-3-4 {
+  background-image: url(../Assets/splash-page/newsfeed.png);
+  background-color: #F4F4F4;
+}
+#image-3-5 {
+  background-image: url(../Assets/splash-page/privacy-screen.gif);
+  background-color: #F4F4F4;
+}
+#image-3-6 {
+  background-image: url(../Assets/splash-page/mobile-design-1.png);
+  background-color: #F4F4F4;
+  margin-right: 3%;
+}
+#image-3-7 {
+  background-image: url(../Assets/splash-page/mobile-design-2.png);
+  background-color: #F4F4F4;
 }
 
 
 
-@media (max-width: 800px) {
-    .navigation {
-        justify-content: space-around;
-    }
+
+/*footer stuff*/
+
+.line{
+  width: 90%;
+  border-top: solid 1px lightgrey;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
+
+.contact-info{
+  font-size: 25px;
+  font-family: 'Roboto Mono', monospace;
+  max-width: 1000px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  line-height: 1.7;
+}
+
+.social{
+  font-size: 30px;  
+  color: grey;
+  display: inline-block;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.social a:visited{
+  color: grey;
+}
+
+.contact-info a{
+ color: none;
+  text-decoration: underline;
+    text-decoration-style: wavy;
+    -moz-text-decoration-color: pink; /* Code for Firefox */
+    text-decoration-color: pink;
+  }
+
+footer {
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 8%;
+  font-family: 'Roboto Mono', monospace;
+}
+
 
 @media (max-width: 760px) {
 
-.content{
-      flex-flow: column wrap;
-    }
+    .title{
+  font-size: 20px;
+  }
 
-    .project{
+  .contact-info{
+    font-size: 20px;
+  }
+
+  .project{
       width: 100%;
       margin: 0 auto;
       margin-bottom: 20px;
@@ -107,29 +416,3 @@ a:hover {
     }
 
 }
-
-@media (max-width: 500px) {
-
-  .mobile-menue{
-    display: inline-block;
-    padding: 22px;
-  }
-
-  .responsive-menue {
-    display: none;
-  }
-
-  .navigation {
-      flex-flow: column wrap;
-    }
-
-    a {
-      text-align: center;
-    }
-
-      li {
-      text-align: center;
-      padding: 7px;
-    }
-
-  }
