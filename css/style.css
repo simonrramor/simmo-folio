@@ -1,5 +1,5 @@
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -17,6 +17,23 @@ a:visited {
   color: black;
 }
 
+a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  -moz-text-decoration-color: rgb(234,76,137); /* Code for Firefox */
+  text-decoration-color: rgb(234,76,137);
+}
+
+.splash-video {
+  background-color:#F4F4F4;
+}
+
+.chariti-video {
+  background-color: #F7FBFF;
+
+}
+
 .color {
   color: lightgrey;
 }
@@ -25,12 +42,17 @@ a:visited {
 
 
 .hand{
+  color: black;
   font-size: 30px;
   padding-left: 5%;
   padding-top: 20px;
   display: flex;
   float: left;
   letter-spacing: 2px;
+}
+
+.hand:hover {
+    color: rgb(234,76,137);
 }
 
 .navigation {
@@ -46,7 +68,7 @@ a:visited {
 } 
 
 .nav-link:hover {
-    color: pink;
+    color: rgb(234,76,137);
 }
 
 
@@ -60,23 +82,18 @@ a:visited {
 
 /*intro headder and about me stuff */
    .intro {
-  height: 400px;
+  text-align: left;
+  width:90%;
+  margin: 0 auto;
   margin-top: 50px;
-  display: inline-block;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
+
 }
 
 
 .title{
-  font-size: 25px;
-  font-family: 'Roboto Mono', monospace;
-  max-width: 1000px;
-  padding-right: 60px;
-  padding-top: 15px;
-  padding-left: 8%;
-  padding-bottom: 100px;
+  max-width: 850px;
   line-height: 1.7;
-  margin: 0 auto;
 }
 
 
@@ -115,7 +132,7 @@ a:visited {
   background-position: center;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 6  0px;
   display: inline-block;
 }
 
@@ -152,9 +169,11 @@ a:visited {
   max-width: 1000px;
   width: 50%;
   opacity: 1;
-  position: absolute;
+  position: relative;
   margin-top: 50px;
-  margin-left: 50px;  
+  margin-left: 50px;
+  display: inline-block;  
+
 }
 
 .overlay{
@@ -162,9 +181,9 @@ a:visited {
   left: 0;
   height: 700px;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: .5s ease;
-  background-color: black;
+  background-color: slategrey;
   padding-left: 60px;
   padding-top: 100px;
   position: absolute;
@@ -195,14 +214,12 @@ a:visited {
 
 .project-description{
   margin-left: 10%;
-  margin-bottom: 70px;
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
-  width: 40%; 
+  width: 50%; 
   display: inline-block;
-  line-height: 1.7;
-  position: absolute;
-
+  line-height: 1.7; 
+  padding-top: 50px;
 }
 
 .project-comment{
@@ -221,40 +238,40 @@ ul.project-stats {
   padding: 0;
   width: 40%;
   display: inline-block;
+  float: left;
 
-}
-
-
-
-.title a{
-  color: none;
-  text-decoration: underline;
-    text-decoration-style: wavy;
-    -moz-text-decoration-color: pink; /* Code for Firefox */
-    text-decoration-color: pink;
 }
 
 .title a:visited { 
     color: black;}
 
 .title a:hover { 
-    color: pink;}
+    color: rgb(234,76,137);
+  }
+
+
+
+/* IMAGES */
+
+
 
 
 /*Main page images - thumbnails*/
 #image-5 {
-  background-image: url(../Assets/homepage/time_tracker.png);}
+  background-image: url(../Assets/homepage/qubit-main-page.png);
+  background-color: #EAF6F2;}
 #image-1 {
-  background-image: url(../Assets/homepage/Splash_Main_headder.png);
+  background-image: url(../Assets/splash-page/priority-notification.png);
   background-color: #F4F4F4;}
 #image-2 {
   background-image: url(../Assets/homepage/welcome.jpg);
   background-color: #F7FBFF;}
 #image-3 {
     background-image: url(../Assets/media-centre/top-block.png);
-    background-color: #F4F4F4;}
+    background-color: rgba(254,239,253,0.4);}
 #image-4 {
-  background-image: url(../Assets/homepage/zendesk.png);}
+  background-image: url(../Assets/help-centre/top-block.png);
+  background-color: rgba(250,235,215,0.4);}
 
 /* Chariti page images*/
 
@@ -262,7 +279,6 @@ ul.project-stats {
   background-image: url(../Assets/chariti-app/header-multi-screen.png);
   background-color: #F7FBFF;
   margin-top: 40px;}
-
 #image-1-2 {
   background-image: url(../Assets/chariti-app/sign-up.png);
   background-color: #F7FBFF;}
@@ -289,6 +305,9 @@ ul.project-stats {
 #image-1-9 {
   background-image: url(../Assets/chariti-app/awards-overlay.png);
    background-color: #F7FBFF;}
+#image-1-10 {
+  background-image: url(../Assets/chariti-app/scroll-animation.gif);
+   background-color: #F7FBFF;}
 
 
   /*splash page images*/
@@ -306,10 +325,7 @@ ul.project-stats {
   background-image: url(../Assets/splash-page/newsfeed.png);
   background-color: #F4F4F4;
 }
-#image-2-5 {
-  background-image: url(../Assets/splash-page/privacy-screen.gif);
-  background-color: #F4F4F4;
-}
+
 #image-2-6 {
   background-image: url(../Assets/splash-page/mobile-design-1.png);
   background-color: #F4F4F4;
@@ -326,37 +342,51 @@ ul.project-stats {
   margin-top: 40px;}
 #image-3-2 {
   background-image: url(../Assets/media-centre/hero-story-2.png);}
-#image-3-3 {
-  background-image: url(../Assets/media-centre/filter.gif);
-  background-color: #F4F4F4;}
 #image-3-4 {
-  background-image: url(../Assets/splash-page/newsfeed.png);
-  background-color: #F4F4F4;
-}
+  background-image: url(../Assets/media-centre/video-block.png);
+  background-color: #F4F4F4;}
 #image-3-5 {
-  background-image: url(../Assets/splash-page/privacy-screen.gif);
-  background-color: #F4F4F4;
-}
+  background-image: url(../Assets/media-centre/overlays.png);}
+
 #image-3-6 {
-  background-image: url(../Assets/splash-page/mobile-design-1.png);
-  background-color: #F4F4F4;
-  margin-right: 3%;
-}
-#image-3-7 {
-  background-image: url(../Assets/splash-page/mobile-design-2.png);
-  background-color: #F4F4F4;
-}
+  background-image: url(../Assets/media-centre/mobile.png);
+  background-size: contain;} 
+
+  #image-3-7 {
+  background-image: url(../Assets/media-centre/scroll.gif);
+  background-size: contain;} 
+
+   #image-3-8 {
+  background-image: url(../Assets/media-centre/segment-gif.webm);
+  background-size: contain;} 
 
 
+/*Zendesk page images*/
+#image-4-1 {
+  background-image: url(../Assets/help-centre/Header-gif.webm);
+  margin-top: 40px;}
+#image-4-2 {
+  background-image: url(../Assets/help-centre/segmentation-selection.png);}
+#image-4-3 {
+  background-image: url(../Assets/help-centre/dropdown.png);}
+#image-4-4 {
+  background-image: url(../Assets/help-centre/article-page.png);}
+
+  /*Qubit page images*/
+
+  #image-5-1 {
+  background-image: url(../Assets/homepage/qubit-main-page.png);
+  margin-top: 40px;}
 
 
-/*footer stuff*/
+/*FOOTER STUFF*/
 
 .line{
   width: 90%;
   border-top: solid 1px lightgrey;
   margin: 0 auto;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .contact-info{
@@ -365,7 +395,7 @@ ul.project-stats {
   max-width: 1000px;
   padding-right: 60px;
   padding-top: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   line-height: 1.7;
 }
 
@@ -381,13 +411,42 @@ ul.project-stats {
   color: grey;
 }
 
-.contact-info a{
- color: none;
-  text-decoration: underline;
-    text-decoration-style: wavy;
-    -moz-text-decoration-color: pink; /* Code for Firefox */
-    text-decoration-color: pink;
-  }
+.social a:hover {
+    color: rgb(234,76,137);
+}
+
+
+/*ABOUT ME SECTION*/
+
+
+.about-body{
+  margin-top: 30px;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+.my-photo{
+  width: 50%;
+  height: 100vh;
+  background-image: url(../Assets/about-me/sausage-placeholder.jpg);
+  background-size: cover;
+  float: left;
+}
+
+.about-me{
+  width: 50%;
+  height: 100vh;
+  background-color: orange;
+  float: right;
+  padding: 50px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px; 
+  line-height: 1.7;
+ }
+
+
+/*ABOUT ME SECTION END*/
 
 footer {
   font-size: 12px;
@@ -395,6 +454,7 @@ footer {
   padding-left: 8%;
   font-family: 'Roboto Mono', monospace;
 }
+
 
 
 @media (max-width: 760px) {
