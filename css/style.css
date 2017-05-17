@@ -1,17 +1,90 @@
+.mobile {
+  padding: 50px;
+  height: 100vh;
+  width: 100%;
+  float: left;
+  display: none;
+  background-color: red
+}
+
+.mobile-copy h2{
+font-size: 60px;
+padding-bottom: 20px;
+text-align: center;
+}
+
+.mobile-copy h3{
+font-family: 'Roboto Mono', monospace;
+font-size: 30px;
+padding-bottom: 20px;
+text-align: center;
+}
+
+.mobile-contact{
+  margin-top: 20px;
+}
+.social-mobile a{
+  padding: 15px;
+  color: white;
+}
+.social-mobile{
+  font-size: 30px;
+  color: white;
+  padding: 40px;
+text-align: center;
+}
+.mobile-copy h4{
+font-family: 'Roboto Mono', monospace;
+font-size: 25px;
+padding-bottom: 10px;
+text-align: center;
+}
+
+.mobile-copy p{
+font-size: 16px;
+text-align: center;
+}
+
+.mobile-copy {
+  position: absolute;
+      top: 25%;
+      left: 10%;
+      width: 75%;
+}
+
+
+@media (max-width: 600px) {
+  .mobile {
+    display: inline;
+  }
+.body {
+  display: none;
+}
+
+}
+
+.remove{
+  display: none;
+}
+
 h1 {
   font-size: 30px;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 30px;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
 }
 
 p {
   font-size: 16px;
   line-height: 1.5;
-} 
+  font-weight: 300;
+  font-family: 'Roboto Mono', monospace;
+}
 
 a:visited {
   color: black;
@@ -65,7 +138,7 @@ a {
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     font-weight: 900;
-} 
+}
 
 .nav-link:hover {
     color: rgb(234,76,137);
@@ -73,6 +146,7 @@ a {
 
 
 .nav-link {
+  font-weight: 500;
     color:black;
     text-decoration: none;
     padding: 1em;
@@ -149,7 +223,7 @@ a {
 
 /*Mouce hover - Overlay and text*/
 
-.wrapper{ 
+.wrapper{
   max-width: 100%;
   padding: 30px;
   position: relative;
@@ -172,7 +246,7 @@ a {
   position: relative;
   margin-top: 50px;
   margin-left: 50px;
-  display: inline-block;  
+  display: inline-block;
 
 }
 
@@ -184,10 +258,7 @@ a {
   opacity: 0.9;
   transition: .5s ease;
   background-color: slategrey;
-  padding-left: 60px;
-  padding-top: 100px;
   position: absolute;
-  margin: 0 auto;
 }
 
 
@@ -216,10 +287,12 @@ a {
   margin-left: 10%;
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
-  width: 50%; 
+   font-weight: 200;
+  width: 50%;
   display: inline-block;
-  line-height: 1.7; 
+  line-height: 1.7;
   padding-top: 50px;
+  font-weight: 300;
 }
 
 .project-comment{
@@ -227,9 +300,10 @@ a {
   margin-bottom: 70px;
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
-  width: 50%; 
+  width: 50%;
   display: inline-block;
   line-height: 1.7;
+  font-weight: 300;
 
 }
 
@@ -239,13 +313,14 @@ ul.project-stats {
   width: 40%;
   display: inline-block;
   float: left;
+  font-weight: 400;
 
 }
 
-.title a:visited { 
+.title a:visited {
     color: black;}
 
-.title a:hover { 
+.title a:hover {
     color: rgb(234,76,137);
   }
 
@@ -296,7 +371,7 @@ ul.project-stats {
   background-image: url(../Assets/chariti-app/comments.png);
   background-color: #F7FBFF;}
 #image-1-7 {
-  background-image: url(../Assets/chariti-app/star-rating.png);
+  background-image: url(../Assets/chariti-app/messaging.png);
   background-color: #F7FBFF;}
 #image-1-8 {
   background-image: url(../Assets/chariti-app/awards.png);
@@ -350,15 +425,15 @@ ul.project-stats {
 
 #image-3-6 {
   background-image: url(../Assets/media-centre/mobile.png);
-  background-size: contain;} 
+  background-size: contain;}
 
   #image-3-7 {
   background-image: url(../Assets/media-centre/scroll.gif);
-  background-size: contain;} 
+  background-size: contain;}
 
    #image-3-8 {
   background-image: url(../Assets/media-centre/segment-gif.webm);
-  background-size: contain;} 
+  background-size: contain;}
 
 
 /*Zendesk page images*/
@@ -400,7 +475,7 @@ ul.project-stats {
 }
 
 .social{
-  font-size: 30px;  
+  font-size: 30px;
   color: grey;
   display: inline-block;
   padding-right: 20px;
@@ -441,7 +516,7 @@ ul.project-stats {
   float: right;
   padding: 50px;
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px; 
+  font-size: 16px;
   line-height: 1.7;
  }
 
