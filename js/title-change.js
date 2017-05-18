@@ -1,4 +1,4 @@
-$(function() {
+setTimeout$(function() {
           var pageTitle = $('title').text();
         $(window).delay(18000).blur(function () {
           $('title').text(`WAIT! COME BACK! ${pageTitle}`)
@@ -7,6 +7,3 @@ $(function() {
           $('title').text(pageTitle);
         });
       });
-
-
-      
