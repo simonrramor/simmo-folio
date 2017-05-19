@@ -30,17 +30,15 @@ text-align: center;
 }
 .social-mobile a{
   padding: 15px;
-  color: white;
 }
 .social-mobile{
   font-size: 30px;
-  color: white;
-  padding: 40px;
+  padding: 20px;
 text-align: center;
 }
 .mobile-copy h4{
 font-family: 'Roboto Mono', monospace;
-font-size: 25px;
+font-size: 18px;
 padding-bottom: 10px;
 text-align: center;
 }
@@ -54,21 +52,9 @@ text-align: center;
   position: absolute;
       top: 9%;
       left: 10%;
-      width: 75%;
+      width: 80%;
 }
 
-
-@media (max-width: 600px) {
-  .mobile {
-    display: inline;
-  }
-.body {
-  display: none;
-}
-.project {
-  height: 500px;
-}
-}
 
 .remove{
   display: none;
@@ -558,6 +544,14 @@ footer {
 @media (max-width: 790px) {
  #image-2-1{
    width: 100%;
+   height: 500px;
+ }
+}
+
+@media (max-width: 700px) {
+ #image-2-1{
+   width: 100%;
+   height: 400px;
  }
 }
 
@@ -585,11 +579,23 @@ footer {
       justify-content: center;
     }
 
-.overlay{
-  height: 500px;
+  .overlay{
+    height: 500px;
+  }
+
+  video {
+    height: 500px;
+  }
 }
 
-video {
-  height: 500px;
-}
-}
+  @media (max-width: 600px) {
+    .mobile {
+      display: inline;
+    }
+  .body {
+    display: none;
+  }
+    .project {
+      height: 500px;
+    }
+  }
