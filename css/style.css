@@ -29,7 +29,7 @@ text-align: center;
   margin-top: 20px;
 }
 .social-mobile a{
-  padding: 15px;
+  padding: 10px;
 }
 .social-mobile{
   font-size: 30px;
@@ -421,7 +421,7 @@ ul.project-stats {
   background-image: url(../Assets/media-centre/hero-story-2.png);}
 #image-3-4 {
   background-image: url(../Assets/media-centre/video-block.png);
-  background-color: #F4F4F4;}
+}
 #image-3-5 {
   background-image: url(../Assets/media-centre/overlays.png);}
 
@@ -477,8 +477,7 @@ ul.project-stats {
 }
 
 .social{
-  font-size: 30px;
-  color: grey;
+  font-size: 25px;
   display: inline-block;
   padding-right: 20px;
   padding-bottom: 40px;
@@ -486,7 +485,7 @@ ul.project-stats {
 }
 
 .social a:visited{
-  color: grey;
+  color: none;
 }
 
 .social a:hover {
